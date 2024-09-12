@@ -7,7 +7,7 @@ This reading and practice was really helpful with learning the basics of GitHub 
     - VS Code has embedded git functions! This makes things super easy
     - Merges are found when you pull something that was already edited that you also made changes to locally. You will be alerted of the discrepency. Compare the differences, make changes, and re-commit/push the changes to fix a merge.
 
-###The Internet
+### The Internet
  - EC2 gets us the IP Address, Route 53 gets us the Domain name
  - Layers of the internet:
    - Link (Physical connections) fiber, hardware
