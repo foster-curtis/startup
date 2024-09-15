@@ -12,7 +12,7 @@ How often do you create new passwords? We sign up for things every day, and each
 - Stores and displays the number of passwords you have generated, and displays a leaderboard of all users
 
 ## Design
-
+![20240914_185113](https://github.com/user-attachments/assets/b2fb8451-f767-4341-b859-74e89d6da22e)
 
 ## Technologies
 I am going to use the required technologies in the following ways.
