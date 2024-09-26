@@ -26,3 +26,13 @@ Service - Backend service with endpoints for:
   - Retreiving Leaderboard stats
 DB/Login - Store users and # of passwords generated in database. Register and login users. Credentials securely stored in database. Can't vote unless authenticated.
 WebSocket - As each user votes, their votes are broadcast to all other users.
+
+# HTML Deliverable
+For this deliverable I built out the structure of my application using HTML.
+
+- [x] HTML pages - Four HTML pages that represent login, password generation, Leaderboard, and new User Creation.
+- [x] Links - The login page automatically links to the Home(password generation) page. The login page also has a link to the New User page, and all pages hav navigation to Home, Leaderboard, and Login
+- [x] Buttons - Added (nonfunctional XD) buttons for user interactions like passPhrase generation, login, and new user creation
+- [x] Text - Each of the voting choices is represented by a textual description.
+- [x] DB - Input box and submit button for login and user creation. The Leaderboard data and login info will be stored in the database
+- [x] WebSocket - Leaderboard will dynamically update as users generate/test passwords
