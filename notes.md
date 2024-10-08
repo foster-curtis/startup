@@ -50,3 +50,20 @@ This reading and practice was really helpful with learning the basics of GitHub 
    - You must define what flex means for all children of a flex-defined element
    - CSS Frameworks are similar to packages/libraries in other languages. Look up the bootstrap framework and use it
      - You will need to add a link to it in the head and a script element in the body
+    
+
+## JavaScript
+- JavaScript is for manipulating the DOM (html)
+- `console.log('string')` -> prints the string to the console
+#### Linking JavaScript with HTML:
+- Add a script file (example.js) same as CSS
+- Using the `<script></script>` tag
+- Adding script attributes to an element
+
+
+
+
+
+
+
+
