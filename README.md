@@ -36,3 +36,6 @@ For this deliverable I built out the structure of my application using HTML.
 - [x] Text - Each of the voting choices is represented by a textual description.
 - [x] DB - Input box and submit button for login and user creation. The Leaderboard data and login info will be stored in the database
 - [x] WebSocket - Leaderboard will dynamically update as users generate/test passwords
+
+
+# CSS Deliverable
