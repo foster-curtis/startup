@@ -12,3 +12,7 @@ main {
     flex: 1;
     justify-content: space-around;
 }
+
+.card {
+    min-height: 75vh;
+}

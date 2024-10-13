@@ -5,42 +5,87 @@
         <!-- Tell browsers not to scale the viewport automatically -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>PassPhrase-Login</title> 
+
+        <link rel="stylesheet" href="main.css" />
+        
+        <!-- Include bootstrap CSS framework -->
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+        crossorigin="anonymous"
+        />
     </head>
     <body>
-        <header>
-            <h1>PassPhrase</h1>
-            <nav>
-                <menu>
-                    <li><a href="homePage.html">Home</a></li>
-                    <li><a href="index.html">Login</a></li>
-                    <li><a href="leaderboard.html">Leaderboard</a></li>
-                </menu>
-            </nav>
-            <hr />
-        </header>
-        <main>
-            <p>Logging in to PassPhrase will count each password you generate toward your place on the leaderboard!</p>
-            <form method="get" action="homePage.html">
-                <div>
-                  <span>@</span>
-                  <input type="email" placeholder="email@example.com" />
-                </div>
-                <div>
-                  <span>🔒</span>
-                  <input type="password" placeholder="Create Password" />
-                </div>
-                <div>
-                    <span>🔒</span>
-                    <input type="password" placeholder="Confirm Password" />
+        <div class="wrapper">
+            <header class="bg-primary container-fluid">
+                <nav class="navbar navbar-expand-sm bg-primary fixed-top">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="homePage.html"><b>PassPhrase</b></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link" href="homePage.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Login</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="leaderboard.html">Leaderboard</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </header>
+            <main class="bg-light d-flex flex-column container-fluid text-center">
+                <form method="get" action="homePage.html">
+                    <legend class="mb-5"><h1>Create New User</h1></legend>
+                    <div class="row justify-content-center">
+                        <div class="col-6">
+                            <div class="input-group row mb-3">
+                                <span class="col-3 input-group-text">Email</span>
+                                <input class="col-9 form-control" type="email" placeholder="email@example.com" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-6">
+                            <div class="input-group row mb-3">
+                                <span class="col-3 input-group-text">Password</span>
+                                <input class="col-9 form-control" type="password" placeholder="Passwords here" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-6">
+                            <div class="input-group row mb-3">
+                                <span class="col-3 input-group-text">Confirm Password</span>
+                                <input class="col-9 form-control" type="password" placeholder="Don't mess up" />
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary" type="submit">Create Account</button>
+                    </div>
+                    <div class="m-4">Logging in to PassPhrase will count each password you generate toward your place on the leaderboard!</div>
+                </form>
+            </main>
+            <footer class="bg-dark text-white-50 fixed-bottom p-3">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col">
+                      <span class="text-reset">Author: Foster Curtis</span>
+                    </div>
+                    <div class="col text-end">
+                      <a class="text-reset" href="https://github.com/foster-curtis/startup/tree/main">Source</a>
+                    </div>
                   </div>
-                <div>
-                    <button type="submit">Create Account</button>
                 </div>
-            </form>
-        </main>
-        <footer>
-            <hr />
-
-        </footer>    
+            </footer>
+        </div>
     </body>
 </html>
