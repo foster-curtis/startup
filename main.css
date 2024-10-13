@@ -16,3 +16,8 @@ main {
 .card {
     min-height: 75vh;
 }
+
+#trophy {
+    max-height: 10vh;
+    width: auto;
+}
