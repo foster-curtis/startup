@@ -39,3 +39,12 @@ For this deliverable I built out the structure of my application using HTML.
 
 
 # CSS Deliverable
+For this deliverable I properly styled the application into its final appearance.
+
+- [x] Header, footer, and main content body styled with bootstrap and flexed using CSS
+- [x] Navigation elements - added highlighting for the active page and made a horizontal menu
+- [x] Responsive to window resizing for most screen sizes
+- [x] Application elements - Used good contrast and whitespace, styled leaderboard table to prep for websocket
+- [x] Home Page - added cards to hold the main site features
+- [x] Application text content - Consistent fonts using bootstrap
+- [x] Application images - Added and formatted image of a trophy to the leaderboard.
