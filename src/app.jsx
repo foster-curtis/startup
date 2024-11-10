@@ -57,3 +57,7 @@ export default function App() {
         </BrowswerRouter>
     )
 }
+
+function NotFound() {
+    return <main className='container-fluid bg-secondary text-center'>404: Return to sender. Address unknown.</main>;
+  }
