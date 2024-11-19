@@ -2,14 +2,14 @@ import React from 'react';
 
 export function Leaderboard() {
     return (
-        <main class="bg-light d-flex flex-column container-fluid text-center">
-                <div class="row justify-content-center">
+        <main className="bg-light d-flex flex-column container-fluid text-center">
+                <div className="row justify-content-center">
                     <img src="trophy-clipart.png" alt="trophy" id="trophy"/>
-                    <h1 class="text-primary mb-2">Leaderboard</h1>
-                    <h3 class="text-secondary mb-3">Generate and test your passwords to take your place on the podium!</h3>
-                    <section class="col-10">
-                        <table class="table table-striped table-hover" id="leaderboard">
-                            <thead class="table-dark">
+                    <h1 className="text-primary mb-2">Leaderboard</h1>
+                    <h3 className="text-secondary mb-3">Generate and test your passwords to take your place on the podium!</h3>
+                    <section className="col-10">
+                        <table className="table table-striped table-hover" id="leaderboard">
+                            <thead className="table-dark">
                                 <tr>
                                     <th>User</th>
                                     <th>PassPhrases Generated</th>
@@ -43,5 +43,5 @@ export function Leaderboard() {
                     <p>Rankings are calculated by <em style="color:rgb(85, 85, 85)">Passphrases Genetrated + Passwords Tested</em></p>
                 </div>
             </main>
-    );
+    );Name
 }
