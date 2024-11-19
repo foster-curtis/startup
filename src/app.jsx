@@ -5,7 +5,7 @@ import { NewUser } from '.newUser/newUser';
 import { Home } from '.home/home';
 import { Leaderboard } from './leaderboard/leaderboard';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import './app.css';
 
 export default function App() {
     return (

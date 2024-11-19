@@ -30,7 +30,7 @@ export function Login() {
                   </div>                
                 </form>
               </div>
-              <p class="m-3">Don't have an account? <a class="btn btn-sm btn-outline-primary" href="newUser.html">Sign up here</a></p>
+              <p class="m-3">Don't have an account? <a class="btn btn-sm btn-outline-primary" href="newUser">Sign up here</a> </p>
         </main>
     );
 }
