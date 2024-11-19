@@ -20,13 +20,13 @@ export default function App() {
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav">
                         <li className="nav-item">
-                            <NavLink className="nav-link" to="home">Home</NavLink>
+                            <Navlink className="nav-link" to="home">Home</Navlink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link active" aria-current="page" to="">Login</NavLink>
+                            <Navlink className="nav-link active" aria-current="page" to=''>Login</Navlink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link" to="leaderboard">Leaderboard</NavLink>
+                            <Navlink className="nav-link" to="leaderboard">Leaderboard</Navlink>
                         </li>
                         </ul>
                     </div>
@@ -55,7 +55,7 @@ export default function App() {
             </div>
         </footer>
         </BrowswerRouter>
-    )
+    );
 }
 
 function NotFound() {
