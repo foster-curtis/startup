@@ -35,5 +35,5 @@ export function NewUser() {
                 <div class="m-4">Logging in to PassPhrase will count each password you generate toward your place on the leaderboard!</div>
             </form>
         </main>
-    )
+    );
 }

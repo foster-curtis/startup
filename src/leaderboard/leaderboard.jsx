@@ -43,5 +43,5 @@ export function Leaderboard() {
                     <p>Rankings are calculated by <em style="color:rgb(85, 85, 85)">Passphrases Genetrated + Passwords Tested</em></p>
                 </div>
             </main>
-    )
+    );
 }
