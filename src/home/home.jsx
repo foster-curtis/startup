@@ -1,17 +1,18 @@
 import React from 'react';
+import "./home.css";
 
 export function Home() {
     return (
         <main className="bg-light d-flex flex-column container-fluid text-center" display="flex-column">
         <div className="row justify-content-evenly">
-            <section className="card col-5 bg-primary border border-2 border-dark" style="--bs-bg-opacity: .60;">
+            <section className="card col-5 bg-primary border border-2 border-dark" >
                 <div className="card-body">
                     <h3 className="card-title">Test Your Password Strength!</h3>
                     <div className="row justify-content-center">
                         <div className="col-md-6">
                             <input className="form-control my-3" type="text" placeholder="Your Password Here" id="passwordTester" />
                         </div>
-                        <p>Password Strength: <em style="color:rgb(253, 232, 0)" className="fwt-bold">Good</em></p>
+                        <p>Password Strength: <em className="fwt-bold">Good</em></p>
                         <p>Time to Crack: 3 hours</p>
                     </div>
                 </div>

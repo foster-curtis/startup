@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 export function Login() {
     return (
@@ -10,7 +11,7 @@ export function Login() {
                   <div className="row justify-content-center">
                     <div className="col-md-3">
                       <div className="input-group mb-3">
-                        <label for="emailInput" className="input-group-text">Email</label>
+                        <label htmlFor="emailInput" className="input-group-text">Email</label>
                         <input className="form-control" type="email" placeholder="youremail@example.com" id="emailInput" />
                       </div>
                     </div>
@@ -18,7 +19,7 @@ export function Login() {
                   <div className="row justify-content-center">
                     <div className="col-md-3">
                       <div className="input-group mb-3">
-                        <label for="passwordInput" className="input-group-text">Password</label>
+                        <label htmlFor="passwordInput" className="input-group-text">Password</label>
                         <input className="form-control" type="password" placeholder="make it good" id="passwordInput"/>
                       </div>
                     </div>
@@ -30,7 +31,7 @@ export function Login() {
                   </div>                
                 </form>
               </div>
-              <p className="m-3">Don't have an account? <Navlink className="btn btn-sm btn-outline-primary" to="newUser">Sign up here</Navlink> </p>
+              <p className="m-3">Don't have an account? <NavLink className="btn btn-sm btn-outline-primary" to="newUser">Sign up here</NavLink> </p>
         </main>
     );
 }

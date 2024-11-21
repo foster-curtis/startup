@@ -1,0 +1,7 @@
+em {
+    color: rgb(85, 85, 85);
+}
+
+section {
+    --bs-bg-opacity: .60;
+}

@@ -48,3 +48,7 @@ For this deliverable I properly styled the application into its final appearance
 - [x] Home Page - added cards to hold the main site features
 - [x] Application text content - Consistent fonts using bootstrap
 - [x] Application images - Added and formatted image of a trophy to the leaderboard.
+
+# React Deliverable
+
+For this deliverable I ported over my multi-page website into a component-driven single-page React website. I did this by using JavaScript to inject React coponents into my index.html page, which starts with only a "root" div element. The JavaScript injects my main App page, which contains my header, footer, and a React Router (to handle navigation between the different main components).

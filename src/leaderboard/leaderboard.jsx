@@ -40,7 +40,7 @@ export function Leaderboard() {
                             </tbody>
                         </table>
                     </section>
-                    <p>Rankings are calculated by <em style="color:rgb(85, 85, 85)">Passphrases Genetrated + Passwords Tested</em></p>
+                    <p>Rankings are calculated by <em>Passphrases Genetrated + Passwords Tested</em></p>
                 </div>
             </main>
     );Name
