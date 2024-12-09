@@ -13,7 +13,7 @@ export default function App() {
             <header className="bg-primary container-fluid">
                 <nav className="navbar navbar-expand-sm bg-primary fixed-top">
                     <div className="container-fluid">
-                        <NavLink className="navbar-brand" to="homePage"><b>PassPhrase</b></NavLink>
+                        <NavLink className="navbar-brand" to="home"><b>PassPhrase</b></NavLink>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>

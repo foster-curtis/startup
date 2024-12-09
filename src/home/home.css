@@ -5,3 +5,26 @@ em {
 section {
     --bs-bg-opacity: .60;
 }
+
+#veryWeak {
+    color: red;
+}
+
+#weak {
+    color: orange;
+}
+
+#moderatelyWeak {
+    color: yellow;
+}
+
+#strong {
+    color: rgb(70, 206, 252);
+}
+
+#veryStrong {
+    color:green;
+}
+
+.strengthMeter {
+}

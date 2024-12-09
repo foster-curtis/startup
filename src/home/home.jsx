@@ -3,17 +3,13 @@ import "./home.css";
 
 export function Home() {
     return (
-        <main className="bg-light d-flex flex-column container-fluid text-center" display="flex-column">
+        <main className="bg-lightbg-lightcolumn container-fluid text-center" display="flex-column">
         <div className="row justify-content-evenly">
             <section className="card col-5 bg-primary border border-2 border-dark" >
                 <div className="card-body">
                     <h3 className="card-title">Test Your Password Strength!</h3>
                     <div className="row justify-content-center">
-                        <div className="col-md-6">
-                            <input className="form-control my-3" type="text" placeholder="Your Password Here" id="passwordTester" />
-                        </div>
-                        <p>Password Strength: <em className="fwt-bold">Good</em></p>
-                        <p>Time to Crack: 3 hours</p>
+                        <StrengthTester/>
                     </div>
                 </div>
             </section>
@@ -29,3 +25,59 @@ export function Home() {
     </main>
     );
 }
+
+const StrengthTester = () => {
+    const [text, updateText] = React.useState('');
+  
+    const onChange = (e) => {
+      updateText(e.target.value);
+    };
+    return (
+      <div>
+        <div className="col-md-6">
+          <input
+            className='form-control my-3'
+            type='text'
+            onChange={(e) => onChange(e)}
+            placeholder='Your Password Here'
+            id='passwordTester'
+          />
+        </div>
+        
+        <PasswordEvaluation answer={text} />
+
+      </div>
+    );
+  };
+  
+  const PasswordEvaluation = ({ answer }) => {
+    const result = zxcvbn(answer);
+    let strength = ''
+    switch(result.score) {
+        case(0):
+            strength = <span className='bg-light' id='veryWeak'>Very Weak</span>;
+            break;
+        case(1):
+            strength = <span className='bg-light' id='Weak'>Weak</span>;
+            break;
+        case(2):
+            strength = <span className='bg-light' id='moderatelyWeak'>Moderately Weak</span>
+            break;
+        case(3):
+            strength = <span className='bg-light' id='strong'>Strong</span>
+            break;
+        case(4):
+            strength = <span className='bg-light' id='veryStrong'>Very Strong</span>
+            break;
+        default:
+            strength = <span className='bg-light' id='veryWeak'>This password is very bad</span>
+            break;
+        
+    }
+    return (
+      <div>
+        <p><strong>Password Strength: </strong>{strength}</p>
+        <p><strong>Time to Crack: </strong>{result.crack_times_display.offline_slow_hashing_1e4_per_second}</p>
+      </div>
+    );
+  };
