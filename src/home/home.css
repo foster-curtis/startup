@@ -2,10 +2,18 @@ em {
     color: rgb(85, 85, 85);
 }
 
-section {
-    --bs-bg-opacity: .60;
+#cards {
+    --bs-bg-opacity: .25;
 }
 
 #inputWrapper {
     width: 100%;
+}
+
+.badge {
+    --bs-bg-opacity: .99;
+}
+
+#weak {
+    background-color: #fd7e14;
 }
