@@ -61,6 +61,23 @@ This reading and practice was really helpful with learning the basics of GitHub 
 - Adding script attributes to an element
 
 
+## Final Review
+Port 80 is reserved for...HTTP 
+HTTPS is 443
+SSH is 22
+
+300 range status codes are for content redirects or caching
+400 is client errors
+500 is server errors
+200 is success
+
+Cookies allow a server to store data on the client
+
+Learn mongo DB calls
+
+Websocket is peer to peer instead of client to server
+
+
 
 
 
