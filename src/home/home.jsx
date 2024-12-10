@@ -5,7 +5,7 @@ export function Home() {
     return (
         <main className="bg-lightbg-lightcolumn container-fluid text-center" display="flex-column">
         <div className="row justify-content-evenly">
-            <section className="card col-5 bg-primary border border-2 border-dark" >
+            <section className="card shadow-lg col-5 border border-2 border-secondary" >
                 <div className="card-body">
                     <h3 className="card-title">Test Your Password Strength!</h3>
                     <div className="row justify-content-center">
@@ -34,9 +34,9 @@ const StrengthTester = () => {
     };
     return (
       <div>
-        <div className="col-md-6">
+        <div className="col-md-6" id='inputWrapper'>
           <input
-            className='form-control my-3'
+            className='form-control my-3 align-self-center'
             type='text'
             onChange={(e) => onChange(e)}
             placeholder='Your Password Here'
@@ -55,22 +55,22 @@ const StrengthTester = () => {
     let strength = ''
     switch(result.score) {
         case(0):
-            strength = <span className='bg-light' id='veryWeak'>Very Weak</span>;
+            strength = <span className='badge text-bg-danger' id='veryWeak'>Very Weak</span>;
             break;
         case(1):
-            strength = <span className='bg-light' id='Weak'>Weak</span>;
+            strength = <span className='badge text-bg-orange' id='Weak'>Weak</span>;
             break;
         case(2):
-            strength = <span className='bg-light' id='moderatelyWeak'>Moderately Weak</span>
+            strength = <span className='badge text-bg-warning' id='moderatelyWeak'>Moderately Weak</span>
             break;
         case(3):
-            strength = <span className='bg-light' id='strong'>Strong</span>
+            strength = <span className='badge text-bg-primary' id='strong'>Strong</span>
             break;
         case(4):
-            strength = <span className='bg-light' id='veryStrong'>Very Strong</span>
+            strength = <span className='badge text-bg-success' id='veryStrong'>Very Strong</span>
             break;
         default:
-            strength = <span className='bg-light' id='veryWeak'>This password is very bad</span>
+            strength = <span className='badge text-bg-' id='veryWeak'>This password is very bad</span>
             break;
         
     }
