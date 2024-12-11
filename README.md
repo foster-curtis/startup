@@ -49,6 +49,9 @@ For this deliverable I properly styled the application into its final appearance
 - [x] Application text content - Consistent fonts using bootstrap
 - [x] Application images - Added and formatted image of a trophy to the leaderboard.
 
+
+## NOTE: All submissions beginning with the Service deliverable are being deployed over ungraded deliverables. I have tried to be as detailed as I can here in my README to ensure easier grading.
+
 # React Deliverable
 
 For this deliverable I ported over my multi-page website into a component-driven single-page React website. I did this by using JavaScript to inject React coponents into my index.html page, which starts with only a "root" div element. The JavaScript injects my main App page, which contains my header, footer, and a React Router to handle navigation between the different main components. I then added the following functionality:
@@ -57,3 +60,7 @@ For this deliverable I ported over my multi-page website into a component-driven
   - [x] Generate password button loads a passphrase with random words (mock up pulling from a local file, will be an api call in the future) and allows the user to change word delimiter and capitalization
   - [x] Leaderboard remains the same, just a mockup until I add websocket
   - [x] Changed the login and newUser `form` elements to React components that use the `onSubmit` listener instead of an `action` tag to allow me to control the login info and navigation after form submission.
+
+
+# Startup Service Deliverable
+
