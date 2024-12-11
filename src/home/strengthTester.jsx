@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import "./home.css";
 
 export function StrengthTester() {
@@ -25,34 +25,44 @@ export function StrengthTester() {
     );
   };
   
-  const PasswordEvaluation = ({ answer }) => {
-    const result = zxcvbn(answer);
-    let strength = ''
-    switch(result.score) {
-        case(0):
-            strength = <span className='badge text-bg-danger' id='veryWeak'>Very Weak</span>;
-            break;
-        case(1):
-            strength = <span className='badge' id='weak'>Weak</span>;
-            break;
-        case(2):
-            strength = <span className='badge text-bg-warning' id='moderatelyWeak'>Moderately Weak</span>
-            break;
-        case(3):
-            strength = <span className='badge text-bg-primary' id='strong'>Strong</span>
-            break;
-        case(4):
-            strength = <span className='badge text-bg-success' id='veryStrong'>Very Strong</span>
-            break;
-        default:
-            strength = <span className='badge text-bg-' id='veryWeak'>This password is very bad</span>
-            break;
-        
-    }
-    return (
-      <div>
-        <p><strong>Password Strength: </strong>{strength}</p>
-        <p><strong>Time to Crack: </strong>{result.crack_times_display.offline_slow_hashing_1e4_per_second}</p>
-      </div>
-    );
-  };
+
+const PasswordEvaluation = ({ answer }) => {
+  const [result, setResult] = useState(zxcvbn(''));
+  const [feedback, setFeedback] = useState(['There is no feedback for this password. Looks good!']);
+
+  useEffect(() => {
+    const evaluation = zxcvbn(answer);
+    setResult(evaluation);
+    setFeedback(evaluation.feedback.suggestions.length > 0 ? evaluation.feedback.suggestions : ['There is no feedback for this password. Looks good!']);
+  }, [answer]);
+
+  let strength = '';
+  switch (result.score) {
+    case 0:
+      strength = <span className='badge text-bg-danger' id='veryWeak'>Very Weak</span>;
+      break;
+    case 1:
+      strength = <span className='badge' id='weak'>Weak</span>;
+      break;
+    case 2:
+      strength = <span className='badge text-bg-warning' id='moderatelyWeak'>Moderately Weak</span>;
+      break;
+    case 3:
+      strength = <span className='badge text-bg-primary' id='strong'>Strong</span>;
+      break;
+    case 4:
+      strength = <span className='badge text-bg-success' id='veryStrong'>Very Strong</span>;
+      break;
+    default:
+      strength = <span className='badge text-bg-danger' id='veryWeak'>This password is very bad</span>;
+      break;
+  }
+
+  return (
+    <div>
+      <p><strong>Password Strength: </strong>{strength}</p>
+      <p><strong>Time to Crack: </strong>{result.crack_times_display.offline_slow_hashing_1e4_per_second}</p>
+      <p><strong>Feedback: </strong><span className='text-color-danger'>{feedback.join('. ')}</span></p>
+    </div>
+  );
+};
