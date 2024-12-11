@@ -1,35 +1,14 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { LoginForm } from './loginForm';
 
 export function Login() {
     return (
-        <main className="bg-light d-flex flex-column container-fluid text-center">Name
+        <main className="bg-light d-flex flex-column container-fluid text-center">
             <div>
                 <h1>Welcome to PassPhrase</h1>
                 <p>Logging in to PassPhrase will count each password you generate toward your place on the leaderboard!</p>
-                <form method="get" action="homePage.html">
-                  <div className="row justify-content-center">
-                    <div className="col-md-3">
-                      <div className="input-group mb-3">
-                        <label htmlFor="emailInput" className="input-group-text">Email</label>
-                        <input className="form-control" type="email" placeholder="youremail@example.com" id="emailInput" />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="row justify-content-center">
-                    <div className="col-md-3">
-                      <div className="input-group mb-3">
-                        <label htmlFor="passwordInput" className="input-group-text">Password</label>
-                        <input className="form-control" type="password" placeholder="make it good" id="passwordInput"/>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="row justify-content-center">
-                    <div className="col-md-3">
-                      <button type="submit" className="btn btn-primary w-100">Login</button>
-                    </div>
-                  </div>                
-                </form>
+                <LoginForm />
               </div>
               <p className="m-3">Don't have an account? <NavLink className="btn btn-sm btn-outline-primary" to="newUser">Sign up here</NavLink> </p>
         </main>

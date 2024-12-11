@@ -49,7 +49,7 @@ export default function App() {
                         <span className="text-reset">Author: Foster Curtis</span>
                     </div>
                     <div className="col text-end">
-                        <a className="text-reset" href="https://github.com/foster-curtis/startup/tree/main">Source</a>
+                        <a className="text-reset" href="https://github.com/foster-curtis/startup/tree/main">My Public GitHub Repo</a>
                     </div>
                 </div>
                 </div>
