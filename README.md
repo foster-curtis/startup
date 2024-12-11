@@ -51,4 +51,9 @@ For this deliverable I properly styled the application into its final appearance
 
 # React Deliverable
 
-For this deliverable I ported over my multi-page website into a component-driven single-page React website. I did this by using JavaScript to inject React coponents into my index.html page, which starts with only a "root" div element. The JavaScript injects my main App page, which contains my header, footer, and a React Router (to handle navigation between the different main components).
+For this deliverable I ported over my multi-page website into a component-driven single-page React website. I did this by using JavaScript to inject React coponents into my index.html page, which starts with only a "root" div element. The JavaScript injects my main App page, which contains my header, footer, and a React Router to handle navigation between the different main components. I then added the following functionality:
+
+  - [x] Password strength bar updates dynamically (using React hooks) as you type with password strength, time to crack, and feedback
+  - [x] Generate password button loads a passphrase with random words (mock up pulling from a local file, will be an api call in the future) and allows the user to change word delimiter and capitalization
+  - [x] Leaderboard remains the same, just a mockup until I add websocket
+  - [x] Changed the login and newUser `form` elements to React components that use the `onSubmit` listener instead of an `action` tag to allow me to control the login info and navigation after form submission.
