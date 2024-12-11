@@ -4,7 +4,7 @@ export function Leaderboard() {
     return (
         <main className="bg-light d-flex flex-column container-fluid text-center">
                 <div className="row justify-content-center">
-                    <img src="trophy-clipart.png" alt="trophy" id="trophy"/>
+                    <img src="/trophy-clipart.png" alt="trophy" id="trophy"/>
                     <h1 className="text-primary mb-2">Leaderboard</h1>
                     <h3 className="text-secondary mb-3">Generate and test your passwords to take your place on the podium!</h3>
                     <section className="col-10">
